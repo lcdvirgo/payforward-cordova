@@ -22,31 +22,31 @@ var app = {
         this.bindEvents();
         var data = [
             {
-                value: 30,
-                color: "#999"
+                value: 75,
+                color: "#00bf9a"
             },
             {
-                value: 50,
-                color: "#d9534f"
+                value: 25,
+                color: "#ff5148"
             },
-            {
-                value: 100,
-                color: "#5cb85c"
-            },
-            {
-                value: 40,
-                color: "#f0ad4e"
-            },
-            {
-                value: 120,
-                color: "#5bc0de"
-            }
+            // {
+            //     value: 100,
+            //     color: "#5cb85c"
+            // },
+            // {
+            //     value: 40,
+            //     color: "#f0ad4e"
+            // },
+            // {
+            //     value: 120,
+            //     color: "#5bc0de"
+            // }
         ];
 
         var ctx = document.getElementById("myChart");
         if (ctx) {
             ctx = ctx.getContext("2d");
-            var mychartctx = new Chart(ctx).Doughnut(data);
+            var mychartctx = new Chart(ctx).Pie(data);
         }
 
     },
